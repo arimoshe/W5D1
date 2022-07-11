@@ -3,8 +3,16 @@ class Integer
 end
 
 class Array
+  
+
   def hash
+    new_str = 0
+    self.each do |ele|
+      new_str += ele.hash
+    end
+  return new_str
   end
+
 end
 
 class String
